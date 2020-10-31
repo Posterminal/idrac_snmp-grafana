@@ -51,4 +51,4 @@ iDRAC has the capability to display a TON of data through SNMP and it's easy to 
 Fix implemented per @krystiancharubin regex processor in `idrac-input.conf`
 * Sometimes, for only a few seconds, the data in the tables repeats itself and gets out of line, even though the "group by" in the query has a limit of 1.
 
-## 2020.10.31 Change counters for IDRAC 9 and add OS name to Dashboard
+## Change counters for IDRAC 9 and add OS name to Dashboard
