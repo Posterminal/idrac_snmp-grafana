@@ -50,3 +50,5 @@ iDRAC has the capability to display a TON of data through SNMP and it's easy to 
 ~~One of the only major data related problems I could not figure out was the proper display of Date & Time for system log entries. Dell outputs a date & time stamp for each log entry in the format: `20200420173454.000000-300`. This is what is displayed in the system log table panel as Grafana can't understand and re-format dates and times in this provided format it seems, to make it looks pretty, such as `YYYY-MM-DD HH:MM:SS` I have heard that Telegraf/InfluxDB may have a way for this data to be transformed into a better structure before it makes it to Grafana, although I have come up empty with easy or even semi-easy ways to do this. Hoping somebody else knows a fix that isn't extremely involved.~~  
 Fix implemented per @krystiancharubin regex processor in `idrac-input.conf`
 * Sometimes, for only a few seconds, the data in the tables repeats itself and gets out of line, even though the "group by" in the query has a limit of 1.
+
+## 2020.10.31 Change counters for IDRAC 9 and add OS name to Dashboard
